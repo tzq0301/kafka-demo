@@ -2,8 +2,8 @@ package org.example.kafkademo.visit;
 
 import java.time.LocalDateTime;
 
-public record Visit(String visitor, LocalDateTime visitTime) {
-    public Visit(String visitor) {
+public record VisitEvent(String visitor, LocalDateTime visitTime) {
+    public VisitEvent(String visitor) {
         this(visitor, LocalDateTime.now());
     }
 }
